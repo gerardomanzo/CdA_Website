@@ -1,0 +1,307 @@
+/* 
+
+RESET CSS 
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/* CSS */
+
+body{
+	font-family: Pontano Sans, sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h4, h5, h6{
+	color: #03c;
+}
+
+.centra{
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.centra2{
+	margin: 0 auto;	
+}
+
+.logo{
+	width: 300px;
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+
+header{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(238,238,238,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );
+	border-bottom: 3px solid #690;
+	width: 100%;
+	float: left;
+	position: fixed;
+	top: 0;
+}
+
+header ul{
+	text-align: center;
+	font-size: 150%;
+	float: left;
+	width: 654px;
+	margin-top: 40px;
+}
+
+header ul li{
+	display: inline;
+	margin: 0 20px;
+}
+
+header ul li a{
+	padding: 0 10px;
+}
+
+header ul li a:visited{
+	color: black;
+}
+
+header ul li a:hover{
+	border-bottom: 2px solid #690;
+}
+
+.social{
+	background: rgba(100,117,153,1);
+	background: -moz-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(100,117,153,1)), color-stop(50%, rgba(59,88,152,1)), color-stop(51%, rgba(123,205,235,1)), color-stop(100%, rgba(0,174,237,1)));
+	background: -webkit-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
+	background: -o-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
+	background: -ms-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
+	background: linear-gradient(to right, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#647599', endColorstr='#00aeed', GradientType=1 );
+	border-radius: 45px 45px 45px 45px;
+	-moz-border-radius: 45px 45px 45px 45px;
+	-webkit-border-radius: 45px 45px 45px 45px;
+	width: 90px;
+	height: 90px;
+	float: left;
+	margin-top: 4px;
+}
+
+.social a{
+	width: 45px;
+	height: 100%;
+	float: left;
+}
+
+.social a img{
+	width: 30px;
+}
+
+.social a.fb{
+	border-radius: 45px 0px 0px 45px;
+	-moz-border-radius: 45px 0px 0px 45px;
+	-webkit-border-radius: 45px 0px 0px 45px;
+}
+
+.social a.fb img{
+	margin: 30px 0px 0px 10px;
+}
+
+.social a.tw{
+	border-radius: 0px 45px 45px 0px;
+	-moz-border-radius: 0px 45px 45px 0px;
+	-webkit-border-radius: 0px 45px 45px 0px;
+}
+
+.social a.tw img{
+	margin: 30px 0px 0px 5px;
+}
+
+.container{
+	margin: 95px 0;
+	padding: 10px 5px;
+	float:left;
+}
+
+.eventi{
+	float: left;
+	width: 400px;
+	text-align: center;
+}
+
+.annunci{
+	float: left;
+	width: 645px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.titolo{
+	font-size: 180%;
+	margin: 10px 0;
+}
+
+.riga{
+	font-size: 150%;
+	padding: 20px;
+	background-color: white;
+	float: left;
+}
+
+.dataora{
+	float: left;
+	font-size: 70%;
+}
+
+.data{
+	float: left;
+	margin: 1px 0;
+	color: #039;
+}
+
+.ora{
+	float: left;
+	margin: 1px 0;
+	margin-left: 5px;
+	color: #039;
+
+}
+
+.descrizione{
+	float: left;
+	margin: 1px 0;
+	text-align: left;
+}
+
+.gray{
+	background-color: #eee;
+
+}
+
+.dove{
+	float: left;
+	margin: 1px 0;
+	font-size: 70%;
+	text-align: left;
+	color: #039;
+}
+
+footer{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(238,238,238,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );
+	border-top: 3px solid #690;
+	width: 100%;
+	float: left;
+	position: fixed;
+	bottom: 0;
+}
+
+.info{
+	padding: 10px 0;
+}
+
+.info p{
+	margin: 1px 0 1px 5px;
+}
+
+.chisiamo{
+	width: 100%;
+	padding: 20px;
+}
+
+.testo{
+	font-size: 120%;
+	line-height: 25px;
+}
+
+.morelink{
+	color: #039;
+	font-size: 75%;
+	float: right;
+}
+
+.map{
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.calendario{
+	float: left;
+	border-color: white;
+	border: 1px solid black;
+	border-radius: 2px; 
+	width: 50px;
+	height: 47px;
+	background-color: white;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+	margin-right: 20px;
+}
+
+.giorno{
+	font-size: 80%;
+	color: white;
+	background: linear-gradient(to bottom, rgba(255, 100, 100,1) 0%, rgba(255, 0, 0,1) 100%);
+	top: 0;
+	width: 100%;
+	height: 20px;
+	padding-top: 2px;
+}
+
+.mese{
+	padding-top: 1px;
+}
