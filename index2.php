@@ -13,7 +13,7 @@
 	<div class="centra">
 		<section class="container">
 			<div class="annunci">
-				<h1 class="titolo">Annunci</h1>
+				<h1 class="titolo">&raquo; Annunci</h1>
 				<div class="riga gray" >
 					<div class="dataora">
 						<p class="data">Ven 10 Ottobre 2016</p>
@@ -120,15 +120,12 @@
 				</div>
 			</div>
 			<div class="eventi">
-				<h1 class="titolo">Eventi</h1>
+				<h1 class="titolo">&raquo; Eventi</h1>
+				
 				<div class="riga gray" >
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">23</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
@@ -139,12 +136,8 @@
 				</div>
 				<div class="riga">
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">8</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
@@ -153,14 +146,10 @@
 						<p>Corso Vittori Emanuele II n. 30</p>
 					</div>
 				</div>
-				<div class="riga gray">
+				<div class="riga gray" >
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">23</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
@@ -171,12 +160,8 @@
 				</div>
 				<div class="riga">
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">8</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
@@ -185,14 +170,10 @@
 						<p>Corso Vittori Emanuele II n. 30</p>
 					</div>
 				</div>
-				<div class="riga gray">
+				<div class="riga gray" >
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">23</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
@@ -203,112 +184,8 @@
 				</div>
 				<div class="riga">
 					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray">
-					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray">
-					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="calendario">
-						<div class="giorno">23</div>
-						<div class="mese">ott</div>
-					</div>
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray">
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray">
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
+						<div class="giorno">ott</div>
+						<div class="mese">8</div>
 					</div>
 					<div class="descrizione">
 						<p>Distribuzione alimenti</p>
