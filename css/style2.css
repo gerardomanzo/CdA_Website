@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, .menu, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, .menu, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -72,19 +72,12 @@ h1, h2, h3, h4, h4, h5, h6{
 }
 
 .logo{
-	width: 300px;
+	width: 260px;
 	margin: 0 auto;
-}
-
-.sfondo_logo{
-	width: 400px;
-	margin: 0 auto;
-	margin-top: 27px;
 }
 
 .logo img{
-	margin-top: -72px;
-	width: 300px;
+	width: 260px;
 }
 
 
@@ -101,94 +94,80 @@ header{
 	background-color: #eee;
 	width: 100%;
 	float: left;
-	position: fixed;
 	top: 0;
-	height: 50px;
 }
 
-header ul{
+.menu{
+	float: left;
+	width: 100%;
+}
+
+.menu ul{
 	text-align: center;
 	font-size: 150%;
+	width: 100%;
+	background-color: #F0FFF0;
+	height: 30px;
+	float: left;
+	padding-top: 6px;
 }
 
-header ul li{
+.menu ul li{
 	display: inline;
 	margin: 0 20px;
 }
 
-header ul li a{
+.menu ul li a{
 	padding: 0 10px;
 }
 
-header ul li a:visited{
+.menu ul li a:visited{
 	color: black;
 }
 
-header ul li a:hover{
+.menu ul li a:hover{
 	border-bottom: 2px solid #690;
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .left{
 	float: left;
-	margin-top: -13px;
+	margin-top: 28px;
+	margin-left: 5px;
 }
 
 .right{
 	float:right;
-	margin-top: -110px;
+	margin-top: -45px;
+	margin-right: 20px;
 }
 
-.social{
-	background: rgba(100,117,153,1);
-	background: -moz-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(100,117,153,1)), color-stop(50%, rgba(59,88,152,1)), color-stop(51%, rgba(123,205,235,1)), color-stop(100%, rgba(0,174,237,1)));
-	background: -webkit-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
-	background: -o-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
-	background: -ms-linear-gradient(left, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
-	background: linear-gradient(to right, rgba(100,117,153,1) 0%, rgba(59,88,152,1) 50%, rgba(123,205,235,1) 51%, rgba(0,174,237,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#647599', endColorstr='#00aeed', GradientType=1 );
-	border-radius: 45px 45px 45px 45px;
-	-moz-border-radius: 45px 45px 45px 45px;
-	-webkit-border-radius: 45px 45px 45px 45px;
-	width: 90px;
-	height: 90px;
+.right p{
 	float: left;
-	margin-top: 4px;
-	margin-left: 50px;
 }
 
-.social a{
+.right a img{
 	width: 45px;
-	height: 100%;
-	float: left;
 }
 
-.social a img{
-	width: 30px;
+.right a.fb img{
+	margin: -13px 0 0 10px;
 }
 
-.social a.fb{
-	border-radius: 45px 0px 0px 45px;
-	-moz-border-radius: 45px 0px 0px 45px;
-	-webkit-border-radius: 45px 0px 0px 45px;
-}
-
-.social a.fb img{
-	margin: 30px 0px 0px 10px;
-}
-
-.social a.tw{
-	border-radius: 0px 45px 45px 0px;
-	-moz-border-radius: 0px 45px 45px 0px;
-	-webkit-border-radius: 0px 45px 45px 0px;
-}
-
-.social a.tw img{
-	margin: 30px 0px 0px 5px;
+.right a.tw img{
+	margin: -13px 0 0 5px;
 }
 
 .container{
-	margin: 95px 0;
+	margin:  0;
 	padding: 10px 5px;
 	float:left;
 }
