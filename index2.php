@@ -14,186 +14,104 @@
 		<section class="container">
 			<div class="annunci">
 				<h1 class="titolo">&raquo; Annunci</h1>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur...</p>
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="riga" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur...</p>
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="riga" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur...</p>
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="riga" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur...</p>
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="riga" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur. Consequuntur iste inventore, in quod deserunt neque!</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="dataora">
-						<p class="data">Ven 10 Ottobre 2016</p>
-						<p class="ora">18:00</p>
-					</div>
-					<div class="descrizione">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, mollitia, repellendus incidunt tempore modi officia necessitatibus atque veniam id consequuntur? Aspernatur, eius, consectetur...</p>
-						<a href=""></a>
-					</div>
-				</div>
+
+				<?php
+					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
+
+					if($mysqli->connect_errno)
+						die('Errore di connessione (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
+					
+					$query = "SELECT * FROM news ORDER BY data_ora";
+					$result = $mysqli->query($query);
+					if($result->num_rows)
+						while($row = $result->fetch_assoc())
+						{
+							$timestamp = strtotime($row['data_ora']);
+
+							$giorno = date('d',$timestamp);
+							$mese = date('M',$timestamp);
+							$anno = date('Y',$timestamp);
+							$ora = date('H', $timestamp);
+							$minuti = date('i', $timestamp);;
+
+							echo "
+								<div class=\"riga gray\">
+									<div class=\"dataora\">
+										<p class=\"data\">".
+											$giorno ." " . $mese . " " . $anno ."
+										</p>
+										<p class=\"ora\">".
+											$ora . ":" . $minuti ."
+										</p>
+									</div>
+									<div class=\"descrizione\">
+										<p>".
+											$row['testo']."
+										</p>
+									</div>
+								</div>";
+						}
+
+					/* close result set */
+					$result->close();
+
+					/* close connection */
+					$mysqli->close();
+				?>
+
 			</div>
 			<div class="eventi">
 				<h1 class="titolo">&raquo; Eventi</h1>
 				
-				<div class="riga gray" >
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">23</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">8</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">23</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">8</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga gray" >
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">23</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
-				<div class="riga">
-					<div class="calendario">
-						<div class="giorno">ott</div>
-						<div class="mese">8</div>
-					</div>
-					<div class="descrizione">
-						<p>Distribuzione alimenti</p>
-					</div>
-					<div class="dove">
-						<p>Corso Vittori Emanuele II n. 30</p>
-					</div>
-				</div>
+				<?php
+					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
+
+					if($mysqli->connect_errno)
+						die('Errore di connessione (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
+					
+					$query = "SELECT * FROM eventi ORDER BY data_ora";
+					$result = $mysqli->query($query);
+					if($result->num_rows)
+						while($row = $result->fetch_assoc())
+						{
+							$timestamp = strtotime($row['data_ora']);
+
+							$giorno = date('d',$timestamp);
+							$mese = date('M',$timestamp);
+							$anno = date('Y',$timestamp);
+							$ora = date('H', $timestamp);
+							$minuti = date('i', $timestamp);;
+
+							echo "
+								<div class=\"riga\">
+									<div class=\"calendario\">
+										<div class=\"giorno\">".
+											$mese."
+										</div>
+										<div class=\"mese\">".
+											$giorno."
+										</div>
+									</div>
+									<div class=\"descrizione\">
+										<p>".
+											$row['titolo']."
+										</p>
+									</div>
+									<div class=\"dove\">
+										<p>".
+											$row['luogo']."
+										</p>
+									</div>
+								</div>";
+						}
+
+					/* close result set */
+					$result->close();
+
+					/* close connection */
+					$mysqli->close();
+				?>
+
 			</div>	
 		</section>
 	</div>	
