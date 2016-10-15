@@ -3,7 +3,7 @@
 		<title>Consorzio dell'Agro ONLUS</title>
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
 		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet"> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	</head>
 <body>
 	
@@ -121,7 +121,6 @@
 		include("./footer.html");
 	?> -->
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" src="./jQuery/shorten.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
