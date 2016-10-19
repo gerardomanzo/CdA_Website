@@ -95,11 +95,33 @@ header{
 	width: 100%;
 	float: left;
 	top: 0;
+	font-family: 'Coming Soon', cursive;
+}
+
+.cti{
+	float: left;
+    width: 100%;
+    margin-left: 110px;
+}
+
+.location{
+	float: left;
+    width: 20px;
+}
+
+.indirizzo{
+	width: 100%;
+    margin-top: 21px;
+    margin-left: 31px;
 }
 
 .menu{
+	position: inherit;
 	float: left;
 	width: 100%;
+	-webkit-transition: top 1s; /* Safari */
+    transition: top 1s;
+
 }
 
 .menu ul{
@@ -130,7 +152,6 @@ header{
 }
 
 .fixed {
-    position: fixed;
     top:0; left:0;
     width: 100%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -140,8 +161,9 @@ header{
 
 .left{
 	float: left;
-	margin-top: 28px;
-	margin-left: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 390px;
 }
 
 .right{
@@ -170,6 +192,12 @@ header{
 	margin:  0;
 	padding: 10px 5px;
 	float:left;
+}
+
+.box{
+	position: fixed;
+	left: 10px;
+	top: 200px;
 }
 
 .eventi{
