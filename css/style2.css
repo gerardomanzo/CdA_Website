@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, .menu, hgroup, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, .menu, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -95,42 +95,88 @@ header{
 	width: 100%;
 	float: left;
 	top: 0;
+	font-family: 'Coming Soon', cursive;
+}
+
+.cti{
+	float: left;
+    width: 100%;
+    margin-left: 110px;
+}
+
+.location{
+	float: left;
+    width: 20px;
+}
+
+.indirizzo{
+	width: 100%;
+    margin-top: 21px;
+    margin-left: 31px;
 }
 
 .menu{
+	position: inherit;
 	float: left;
 	width: 100%;
+	background-color: #F0FFF0;
 }
 
 .menu ul{
-	text-align: center;
+	display: block;
+	width: 50%;
 	font-size: 150%;
-	width: 100%;
-	background-color: #F0FFF0;
+	margin: 0 auto;
 	height: 30px;
-	float: left;
 	padding-top: 6px;
 }
 
 .menu ul li{
 	display: inline;
-	margin: 0 20px;
+	text-align: center;
 }
 
 .menu ul li a{
-	padding: 0 10px;
+	display: inline-block;
+	width: 19%;
+	transition: color 0.3s;
+	transition: margin 0.3s;
 }
 
 .menu ul li a:visited{
 	color: black;
 }
 
-.menu ul li a:hover{
-	border-bottom: 2px solid #690;
+.uno:hover ~ hr{
+	margin-left: 0%;
+}
+
+.due:hover ~ hr{
+	margin-left: 19%;
+}
+
+.tre:hover ~ hr{
+	margin-left: 39%;
+}
+
+.quattro:hover ~ hr{
+	margin-left: 59%;
+}
+
+.cinque:hover ~ hr{
+	margin-left: 79%;
+}
+
+.menu hr{
+	height: 2px;
+	width: 19%;
+	background: #690;
+	border: none;
+	margin: 0;
+	transition: .3s ease-in-out;
 }
 
 .fixed {
-    position: fixed;
     top:0; left:0;
     width: 100%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -140,8 +186,9 @@ header{
 
 .left{
 	float: left;
-	margin-top: 28px;
-	margin-left: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 390px;
 }
 
 .right{
@@ -172,10 +219,21 @@ header{
 	float:left;
 }
 
+.box{
+	position: fixed;
+	left: 10px;
+	top: 200px;
+}
+
 .eventi{
 	float: left;
 	width: 400px;
 	text-align: center;
+}
+
+.event{
+	width: 288px;
+	float: left;
 }
 
 .annunci{
@@ -183,6 +241,20 @@ header{
 	width: 645px;
 	text-align: center;
 	margin-right: 5px;
+}
+
+.eventi img{
+	float: left;
+	width: 30px;
+	margin-top: -3px;
+	margin-right: 10px;
+}
+
+.annunci img{
+	float: left;
+	width: 30px;
+	margin-top: -2px;
+	margin-right: 10px;
 }
 
 .titolo{
@@ -193,18 +265,35 @@ header{
 	width: 100%;
 	border-bottom: 1px solid #03C;
 	padding-bottom: 10px;
+	font-family: Coming Soon, cursive;
 }
 
-.riga{
-	font-size: 150%;
+.riga_annunci{
+	font-size: 130%;
 	padding: 20px;
 	background-color: white;
 	float: left;
+	width: 605px;
+}
+
+.riga_eventi{
+	font-size: 130%;
+	padding: 20px;
+	background-color: white;
+	float: left;
+	width: 360px;
+}
+
+
+.riga_eventi:nth-child(even), .riga_annunci:nth-child(odd){
+	background-color: #F0FFF0;
+
 }
 
 .dataora{
 	float: left;
-	font-size: 70%;
+	font-size: 80%;
+	width: 100%;
 }
 
 .data{
@@ -227,13 +316,13 @@ header{
 	text-align: left;
 }
 
-.gray{
-	background-color: #F0FFF0;
-
+.descrizione_eventi{
+	margin: 1px 0;
+	text-align: left;
+	width: 100%;
 }
 
 .dove{
-	float: left;
 	margin: 1px 0;
 	font-size: 70%;
 	text-align: left;

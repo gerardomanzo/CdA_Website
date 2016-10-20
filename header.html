@@ -2,7 +2,8 @@
 	<div class="centra">
 
 		<div class="left">
-			<p>Via Cicalesi, 36 - Nocera Inferiore (SA)</p>
+			<p class="cti">Ci trovi in: </p>
+			<img class="location" src="./images/location.png"><p class="indirizzo">Via Cicalesi, 36 - Nocera Inferiore (SA)</p>
 		</div>
 		<!-- <div class="sfondo_logo">
 			<img src="./images/sfondo_grigio.png">
@@ -27,24 +28,12 @@
 
 <nav class="menu">
 	<ul>
-		<li><a>Home</a></li>
-		<li><a>Storico</a></li>
-		<li><a>Chi siamo</a></li>
-		<li><a>Dove siamo</a></li>
-		<li><a>Contatti</a></li>
+		<li class="uno"><a>Home</a></li>
+		<li class="due"><a>Storico</a></li>
+		<li class="tre"><a>Chi siamo</a></li>
+		<li class="quattro"><a>Mappa</a></li>
+		<li class="cinque"><a>Contatti</a></li>
+		<hr/>
 	</ul>
 </nav>
 
-<script type="text/javascript">
-	var stickyOffset = $('.menu').offset().top;
-	$(window).scroll(function(){
-		var sticky = $('.menu'),
-		scroll = $(window).scrollTop();
-
-		if (scroll >= stickyOffset) {
-			sticky.addClass('fixed');
-		}
-		else sticky.removeClass('fixed');
-	});
-
-</script>

@@ -2,11 +2,11 @@
 	<head>
 		<title>Consorzio dell'Agro ONLUS</title>
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
-		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	</head>
 <body>
-	
 	<?php
 		include("./header.html");
 	?>
@@ -14,8 +14,8 @@
 	<div class="centra">
 		<section class="container">
 			<div class="annunci">
-				<h1 class="titolo">&raquo; Annunci</h1>
-
+				<h1 class="titolo"><img src="./images/news.png"> News e Annunci</h1>
+				
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
@@ -36,7 +36,7 @@
 							$minuti = date('i', $timestamp);;
 
 							echo "
-								<div class=\"riga gray\">
+								<div class=\"riga_annunci\">
 									<div class=\"dataora\">
 										<p class=\"data\">".
 											$giorno ." " . $mese . " " . $anno ."
@@ -62,7 +62,7 @@
 
 			</div>
 			<div class="eventi">
-				<h1 class="titolo">&raquo; Eventi</h1>
+				<h1 class="titolo"><img src="./images/calendar.png"> Eventi</h1>
 				
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
@@ -84,7 +84,7 @@
 							$minuti = date('i', $timestamp);;
 
 							echo "
-								<div class=\"riga\">
+								<div class=\"riga_eventi\">
 									<div class=\"calendario\">
 										<div class=\"giorno\">".
 											$mese."
@@ -93,15 +93,17 @@
 											$giorno."
 										</div>
 									</div>
-									<div class=\"descrizione\">
-										<p>".
-											$row['titolo']."
-										</p>
-									</div>
-									<div class=\"dove\">
-										<p>".
-											$row['luogo']."
-										</p>
+									<div class=\"event\">
+										<div class=\"descrizione_eventi\">
+											<p>".
+												$row['titolo']."
+											</p>
+										</div>
+										<div class=\"dove\">
+											<p>".
+												$row['luogo']."
+											</p>
+										</div>
 									</div>
 								</div>";
 						}
@@ -122,14 +124,6 @@
 	?> -->
 
 	<script type="text/javascript" src="./jQuery/shorten.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".annunci .descrizione").shorten({
-				showChars: 100,
-				moreText: "Leggi altro",
-				lessText: "Chiudi"
-			});
-	 	});
-	</script>
+	
 </body>
 </html>
