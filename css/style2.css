@@ -119,7 +119,13 @@ header{
 	position: inherit;
 	float: left;
 	width: 100%;
+<<<<<<< HEAD
 	background-color: #F0FFF0;
+=======
+	-webkit-transition: top 1s; /* Safari */
+    transition: top 1s;
+
+>>>>>>> 1e1e1ee60e62edd70562392a6477cc3945ecf88d
 }
 
 .menu ul{
