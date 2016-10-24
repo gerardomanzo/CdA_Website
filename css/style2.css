@@ -119,13 +119,9 @@ header{
 	position: inherit;
 	float: left;
 	width: 100%;
-<<<<<<< HEAD
 	background-color: #F0FFF0;
-=======
 	-webkit-transition: top 1s; /* Safari */
     transition: top 1s;
-
->>>>>>> 1e1e1ee60e62edd70562392a6477cc3945ecf88d
 }
 
 .menu ul{
@@ -365,6 +361,7 @@ footer{
 }
 
 .testo{
+	margin-bottom: 20px;
 	font-size: 120%;
 	line-height: 25px;
 }
@@ -404,4 +401,58 @@ footer{
 
 .mese{
 	padding-top: 1px;
+}
+
+.form{
+	width: 505px;
+	float: left;
+	padding: 10px;
+}
+
+.form h1{
+	width: 100%;
+	text-align: center;
+}
+
+.form form{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px solid #690;
+}
+
+.form form label{
+	display: block;
+	font-weight: bolder;
+}
+
+.form form input, .form form textarea{
+	width: 90%;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 0;
+	font-size: 16px;
+	background-color: #F0FFF0;
+}
+
+.form form input{
+	height: 40px;
+}
+
+.form form textarea{
+	height: 126px;
+	resize: none;
+	text-align: left;
+}
+
+.form form input[type=submit]{
+	background: linear-gradient(to bottom,#22abe9 5%,#36caf0 100%);
+	width: 95%;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.form form input[type=submit]:hover{
+	background:linear-gradient(to bottom,#36caf0 5%,#22abe9 100%)
 }
