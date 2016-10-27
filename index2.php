@@ -24,6 +24,7 @@
 					
 					$query = "SELECT * FROM news ORDER BY data_ora";
 					$result = $mysqli->query($query);
+
 					if($result->num_rows)
 						while($row = $result->fetch_assoc())
 						{
@@ -72,6 +73,7 @@
 					
 					$query = "SELECT * FROM eventi ORDER BY data_ora";
 					$result = $mysqli->query($query);
+
 					if($result->num_rows)
 						while($row = $result->fetch_assoc())
 						{
@@ -119,10 +121,6 @@
 		</section>
 	</div>	
 	
-	<!-- <?php
-		include("./footer.html");
-	?> -->
-
 	<script type="text/javascript" src="./jQuery/shorten.js"></script>
 	
 </body>

@@ -140,7 +140,7 @@ header{
 
 .menu ul li a{
 	display: inline-block;
-	width: 19%;
+	width: 16%;
 	transition: color 0.3s;
 	transition: margin 0.3s;
 }
@@ -154,24 +154,28 @@ header{
 }
 
 .due:hover ~ hr{
-	margin-left: 19%;
+	margin-left: 16.6%;
 }
 
 .tre:hover ~ hr{
-	margin-left: 39%;
+	margin-left: 33.2%;
 }
 
 .quattro:hover ~ hr{
-	margin-left: 59%;
+	margin-left: 49.9%;
 }
 
 .cinque:hover ~ hr{
-	margin-left: 79%;
+	margin-left: 66.5%;
+}
+
+.sei:hover ~ hr{
+	margin-left: 83.1%;
 }
 
 .menu hr{
 	height: 2px;
-	width: 19%;
+	width: 16%;
 	background: #690;
 	border: none;
 	margin: 0;
@@ -218,7 +222,8 @@ header{
 .container{
 	margin:  0;
 	padding: 10px 5px;
-	float:left;
+	float: left;
+	text-align: center;
 }
 
 .box{
@@ -355,11 +360,6 @@ footer{
 	margin: 1px 0 1px 5px;
 }
 
-.chisiamo{
-	width: 100%;
-	padding: 20px;
-}
-
 .testo{
 	margin-bottom: 20px;
 	font-size: 120%;
@@ -426,7 +426,7 @@ footer{
 	font-weight: bolder;
 }
 
-.form form input, .form form textarea{
+.input, .textarea{
 	width: 90%;
 	margin: 10px auto;
 	padding: 5px 10px;
@@ -435,24 +435,41 @@ footer{
 	background-color: #F0FFF0;
 }
 
-.form form input{
+.input{
 	height: 40px;
 }
 
-.form form textarea{
-	height: 126px;
+.textarea{
+	height: 110px;
 	resize: none;
 	text-align: left;
 }
 
-.form form input[type=submit]{
+.button{
 	background: linear-gradient(to bottom,#22abe9 5%,#36caf0 100%);
 	width: 95%;
+	height: 40px;
 	color: white;
 	font-weight: bolder;
 	cursor: pointer;
+	border: none;
 }
 
-.form form input[type=submit]:hover{
+.button:hover{
 	background:linear-gradient(to bottom,#36caf0 5%,#22abe9 100%)
 }
+
+.areaprivata{
+	margin: 50px 50px;
+	width: 500px;
+	height: 500px;
+	float: left;
+}
+
+.lock{
+	opacity: 0.8;
+	float: left;
+	width: 370px;
+	margin-top: 38px;
+}
+
