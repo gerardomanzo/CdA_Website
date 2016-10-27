@@ -83,6 +83,14 @@ h1, h2, h3, h4, h4, h5, h6{
 
 
 header{
+	/*background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(238,238,238,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );*/
 	background-color: #eee;
 	width: 100%;
 	float: left;
@@ -390,7 +398,7 @@ footer{
 }
 
 .mese{
-	padding-top: 3px;
+	padding-top: 1px;
 }
 
 .form{
@@ -463,31 +471,60 @@ footer{
 	margin-top: 38px;
 }
 
-.riga_storia{
-	font-size: 130%;
-	padding: 20px;
-	background-color: white;
+.single_photo{
 	float: left;
-	width: 95%;
+	width: 100px;
+	margin-right: 10px;
 }
 
-.riga_storia:nth-child(even){
-	background-color: #F0FFF0;
-}
-
-.storia{
-	width: 600px;
-	float: left;	
-}
-
-.link_storia{
-	color: #690;
-	float: left;
-	font-size: 120%;
-	display: block;
-}
-
-.nome {
+.viewer_photo{
+	background-color: darkgray;
 	width: 100%;
-	text-align: left;
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
+	position: absolute;
+	background: url("../images/nero_opaco.png") repeat;
+	top: 0;
+	left: 0;
+}
+
+.next{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+    bottom: 0;
+	right: 50px;
+}
+
+.prev{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+    bottom: 0;
+	left: 50px;
+}
+
+.photo{
+	max-width: 900px;
+	max-height: 450px;
+	position:absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.close{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	margin: auto;
+	right: 20px;
+	top: 20px;
 }
