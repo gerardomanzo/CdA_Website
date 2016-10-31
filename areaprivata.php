@@ -37,7 +37,7 @@
 			<li class="quattro"><a href="dovesiamo.php">Mappa</a></li>
 			<li class="cinque"><a href="contatti.php">Contatti</a></li>
 			<li class="sei"><a href="areaprivata.php">Area Privata</a></li>
-			<hr style="margin: 4px 0 0 83.1%" />
+			<hr style="margin: 0 0 0 83.1%" />
 		</ul>
 	</nav>
 
@@ -77,20 +77,19 @@
 					{?>
 						<div class="form">
 							<h1 class="titolo">Pubblica una news</h1>
-							<form method="POST" action="addAnnuncio.php">
-								<input class="input" name="titolo_news" type="text" placeholder="Titolo news">
-								<textarea class="textarea" name="messaggio_news" maxlength="500" placeholder="Messaggio (max 500 caratteri)" noresize></textarea>
-								<input class="button" type="submit" value="Pubblica news">
+							<form action="addAnnuncio.php" method="POST">
+								<textarea class="textarea" name="messaggio_news" id="messaggio_news" maxlength="500" placeholder="Messaggio (max 500 caratteri)" noresize></textarea>
+								<input class="button input" type="submit" name="submit" value="Pubblica news">
 							</form>
 						</div>
 
 						<div class="form">
 							<h1 class="titolo">Crea un evento</h1>
-							<form method="POST" action="addEvento.php">
-								<input class="input" name="titolo_evento" type="text"  placeholder="Titolo evento">
-								<input class="input" name="luogo_evento" type="text"  placeholder="Luogo evento">
-								<input class="input" name="data_evento" type="text"  placeholder="Data evento">
-								<input class="button" class="input" type="submit" value="Crea evento">
+							<form action="addEvento.php" method="POST">
+								<input class="input" id="titolo_evento" type="text" placeholder="Titolo evento">
+								<input class="input" id="luogo_evento" type="text" placeholder="Luogo evento">
+								<input class="input" id="data_ora_evento" type="text" placeholder="Data e ora evento">
+								<input class="button input" type="submit" name="submit" value="Crea evento">
 							</form>
 						</div>
 						<?php
@@ -101,7 +100,7 @@
 							<h1 class="titolo">Crea una storia</h1>
 							<form enctype="multipart/form-data" action="addStoria.php" method="POST">
 								<input name="file[]" type="file" id="file" multiple>
-								<input class="button" type="submit" value="Carica immagini" name="submit" id="upload">
+								<input class="button input" type="submit" name="submit" value="Carica immagini" id="upload">
 							</form>
 						</div>
 						<?php
@@ -123,6 +122,5 @@
 			?>
 		</section>
 	</div>
-
 </body>
 </html>
