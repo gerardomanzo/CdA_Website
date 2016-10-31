@@ -78,7 +78,7 @@
 						<div class="form">
 							<h1 class="titolo">Pubblica una news</h1>
 							<form action="addAnnuncio.php" method="POST">
-								<textarea class="textarea" name="messaggio_news" id="messaggio_news" maxlength="500" placeholder="Messaggio (max 500 caratteri)" noresize></textarea>
+								<textarea class="textarea" name="messaggio_news" maxlength="500" placeholder="Messaggio (max 500 caratteri)" noresize></textarea>
 								<input class="button input" type="submit" name="submit" value="Pubblica news">
 							</form>
 						</div>
@@ -86,9 +86,9 @@
 						<div class="form">
 							<h1 class="titolo">Crea un evento</h1>
 							<form action="addEvento.php" method="POST">
-								<input class="input" id="titolo_evento" type="text" placeholder="Titolo evento">
-								<input class="input" id="luogo_evento" type="text" placeholder="Luogo evento">
-								<input class="input" id="data_ora_evento" type="text" placeholder="Data e ora evento">
+								<input class="input" name="titolo_evento" type="text" placeholder="Titolo evento">
+								<input class="input" name="luogo_evento" type="text" placeholder="Luogo evento">
+								<input class="input" name="data_ora_evento" type="text" placeholder="Data e ora evento">
 								<input class="button input" type="submit" name="submit" value="Crea evento">
 							</form>
 						</div>
@@ -99,6 +99,9 @@
 						<div class="form">
 							<h1 class="titolo">Crea una storia</h1>
 							<form enctype="multipart/form-data" action="addStoria.php" method="POST">
+								<input class="input" name="nome_storico" type="text" placeholder="Nome Storico">
+								<input class="input" name="data_storico" type="text" placeholder="Data">
+								<textarea class="textarea" name="descrizione_storico" maxlength="500" placeholder="Descrizione (max 500 caratteri)" noresize></textarea>
 								<input name="file[]" type="file" id="file" multiple>
 								<input class="button input" type="submit" name="submit" value="Carica immagini" id="upload">
 							</form>

@@ -207,6 +207,11 @@ header{
 	float: left;
 }
 
+.right a{
+	float: left;
+	margin-top: -15px;
+}
+
 .right a img{
 	width: 45px;
 }
@@ -288,7 +293,6 @@ header{
 	float: left;
 	width: 360px;
 	border-bottom: 1px solid lightgray;
-}
 }
 
 .riga_eventi:nth-child(0){
