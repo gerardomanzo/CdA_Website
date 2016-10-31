@@ -37,7 +37,7 @@
 			<li class="quattro"><a href="dovesiamo.php">Mappa</a></li>
 			<li class="cinque"><a href="contatti.php">Contatti</a></li>
 			<li class="sei"><a href="areaprivata.php">Area Privata</a></li>
-			<hr style="margin: 0 0 0 83.1%" />
+			<hr style="margin: 4px 0 0 83.1%" />
 		</ul>
 	</nav>
 
@@ -52,7 +52,7 @@
 						<form method="POST" action="areaprivata.php">
 							<input class="input" type="text" id="username" name="username" placeholder="username">
 							<input class="input" type="password" id="password" name="password" placeholder="password">
-							<input class="button" type="submit" value="Entra">
+							<input style="width: 98%" class="button" type="submit" value="Entra">
 						</form>
 					</div>
 					
@@ -65,7 +65,7 @@
 						<img src="./images/unlocked.png" alt="" class="lock">
 						<div class="areaprivata">
 							<h1 class="titolo" style="margin-top: 50px">MEN&Ugrave; AREA PRIVATA</h1>
-							<ul>
+							<ul class="menu_ap">
 								<li><a href="areaprivata.php?form=1">Inserisci News / Annuncio</a></li>
 								<li><a href="areaprivata.php?form=2">Inserisci uno Storico</a></li>
 								<li><a href="logout.php">LOGOUT</a></li>
