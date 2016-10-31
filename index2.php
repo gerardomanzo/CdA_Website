@@ -25,7 +25,7 @@
 		<section class="container">
 			<div class="annunci">
 				<h1 class="titolo"><img src="./images/news.png">Bacheca</h1>
-				
+				<div>
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
@@ -70,11 +70,11 @@
 					/* close connection */
 					$mysqli->close();
 				?>
-
+				</div>
 			</div>
 			<div class="eventi">
 				<h1 class="titolo"><img src="./images/calendar.png"> Eventi</h1>
-				
+				<div>
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
@@ -132,7 +132,7 @@
 					/* close connection */
 					$mysqli->close();
 				?>
-
+				</div>
 			</div>	
 		</section>
 	</div>	

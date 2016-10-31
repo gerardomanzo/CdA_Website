@@ -30,20 +30,42 @@
 			<p class="testo">
 				Il consorzio dell’Agro Onlus nasce il 23 settembre 2013 su iniziativa di un gruppo di persone avente esperienza ultra trentennale nel settore del sociale. Attualmente il presidente del consorzio è Erminio Capodanno. <br>
  				Il consorzio è formato da 3 associazioni:
- 				<ul class="lista">
-					<li>l’associazione NOI CON VOI, presieduta da Raffaele Califano, che svolge attività di protezione civile e primo soccorso</li>
-					<li>l’associazione A.S.D. VIVERE INSIEME, gestita da Francesco Grimaldi, che svolge attività ricreative con gli extracomunitari</li>
-					<li>l’associazione A.S.D. SOCIO CULTURALE, il cui presidente è Rocco Setaro, che svolge attività sociali, culturali e sportive</li>
-				</ul>
-			</p>
+ 			</p>
+			<ul class="lista">
+				<li>l’associazione NOI CON VOI, presieduta da Raffaele Califano, che svolge attività di protezione civile e primo soccorso</li>
+				<li>l’associazione A.S.D. VIVERE INSIEME, gestita da Francesco Grimaldi, che svolge attività ricreative con gli extracomunitari</li>
+				<li>l’associazione A.S.D. SOCIO CULTURALE, il cui presidente è Rocco Setaro, che svolge attività sociali, culturali e sportive</li>
+			</ul>
+			
 			<br>
 			<h1 class="titolo">Cosa facciamo</h1>
 			<p class="testo">
-				Lo scopo del consorzio, non è sicuramente quello di volgere alla realizzazione di un profitto, bensì è quello di dare la possibilità alle varie associazioni di svolgere gli obiettivi propostosi senza scopo di lucro.
-				I servizi offerti sono svariati: 
-				tutela dell’ambiente – sport – dilettantistica – spettacoli – diritti della persona –progetti – lavoro – incontri pubblici – seminari – organizzazione corsi – conferenze – convegni – incontri dedicati agli spazi per bambini – socio assistenziali – trasporto e assistenza agli anziani – protezione civile (volontariato)
-				Inoltre, il consorzio ha dato ospitalità, nella sua sede, a due delle sue associazioni affinché allestire il banco alimentare. In questo vengono aiutate circa 100 famiglie della città di Nocera Inferiore.
+				Lo scopo del consorzio è quello di dare la possibilità alle varie associazioni di svolgere i loro obbiettivi senza trarre alcun profitto.
+				I servizi offerti dal consorzio sono:
 			</p>
+			<ul class="lista">
+				<li>Tutela dell'ambiente</li>
+				<li>Sport</li>
+				<li>Dilettantistica</li>
+				<li>Spettacoli</li>
+				<li>Diritti della persona</li>
+				<li>Progetti</li>
+				<li>Lavoro</li>
+				<li>Incontri pubblici</li>
+				<li>Seminari</li>
+				<li>Organizzazione corsi</li>
+				<li>Conferenze</li>
+				<li>Convegni</li>
+				<li>Incontri dedicati agli spazi per bambini</li>
+				<li>Socio Assistenziali</li>
+				<li>Trasporto e assistenza agli anziani</li>
+				<li>Protezione Civile (volontariato)</li>
+			</ul>
+			<p class="testo">
+				<br>
+				Inoltre, il consorzio ha dato ospitalità, nella sua sede, a due delle sue associazioni affinché possano allestire il banco alimentare, che finora ha aiutato circa 100 famiglie della città di Nocera Inferiore.
+			</p>
+			
 		</section>
 	</div>
 	
