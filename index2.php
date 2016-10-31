@@ -18,13 +18,13 @@
 			<li class="quattro"><a href="dovesiamo.php">Mappa</a></li>
 			<li class="cinque"><a href="contatti.php">Contatti</a></li>
 			<li class="sei"><a href="areaprivata.php">Area Privata</a></li>
-			<hr style="margin: 0 0 0 0" />
+			<hr style="margin: 4px 0 0 0" />
 		</ul>
 	</nav>
 	<div class="centra">
 		<section class="container">
 			<div class="annunci">
-				<h1 class="titolo"><img src="./images/news.png"> News e Annunci</h1>
+				<h1 class="titolo"><img src="./images/news.png">Bacheca</h1>
 				
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
@@ -97,14 +97,20 @@
 
 							echo "
 								<div class=\"riga_eventi\">
-									<div class=\"calendario\">
-										<div class=\"giorno\">".
-											$mese."
+									<div class=\"data_eventi\">
+										<div class=\"calendario\">
+											<div class=\"giorno\">".
+												$mese."
+											</div>
+											<div class=\"mese\">".
+												$giorno."
+											</div>
 										</div>
-										<div class=\"mese\">".
-											$giorno."
+										<div class=\"orario\">
+											10:23
 										</div>
 									</div>
+									
 									<div class=\"event\">
 										<div class=\"descrizione_eventi\">
 											<p>".

@@ -20,7 +20,7 @@
 			<li class="quattro"><a href="dovesiamo.php">Mappa</a></li>
 			<li class="cinque"><a href="contatti.php">Contatti</a></li>
 			<li class="sei"><a href="areaprivata.php">Area Privata</a></li>
-			<hr style="margin: 0 0 0 83.1%" />
+			<hr style="margin: 4px 0 0 83.1%" />
 		</ul>
 	</nav>
 
