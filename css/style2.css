@@ -122,6 +122,7 @@ header{
 	background-color: #F0FFF0;
 	-webkit-transition: top 1s; /* Safari */
     transition: top 1s;
+    border: 1px solid lightgray;
 }
 
 .menu ul{
@@ -210,18 +211,11 @@ header{
 	width: 45px;
 }
 
-.right a.fb img{
-	margin: -13px 0 0 10px;
-}
-
-.right a.tw img{
-	margin: -13px 0 0 5px;
-}
-
 .container{
 	margin:  0;
 	padding: 10px 5px;
 	float: left;
+	width: 1050px;
 }
 
 .box{
@@ -279,6 +273,11 @@ header{
 	background-color: white;
 	float: left;
 	width: 605px;
+	border-bottom: 1px solid lightgray;
+}
+
+.riga_annunci:first-child{
+	border-top: 1px solid lightgray;
 }
 
 .riga_eventi{
@@ -287,6 +286,12 @@ header{
 	background-color: white;
 	float: left;
 	width: 360px;
+	border-bottom: 1px solid lightgray;
+}
+}
+
+.riga_eventi:first-child{
+	border-top: 1px solid lightgray;
 }
 
 
@@ -304,14 +309,14 @@ header{
 .data{
 	float: left;
 	margin: 1px 0;
-	color: #039;
+	color: #03C;
 }
 
 .ora{
 	float: left;
 	margin: 1px 0;
 	margin-left: 5px;
-	color: #039;
+	color: #03C;
 
 }
 
@@ -322,16 +327,16 @@ header{
 }
 
 .descrizione_eventi{
-	margin: 1px 0;
+	margin-top: 4px;
 	text-align: left;
 	width: 100%;
 }
 
 .dove{
-	margin: 1px 0;
-	font-size: 70%;
+	margin-top: 5px;
+	font-size: 90%;
 	text-align: left;
-	color: #039;
+	color: #03C;
 }
 
 footer{
@@ -364,11 +369,6 @@ footer{
 	line-height: 25px;
 }
 
-.morelink{
-	color: #039;
-	font-size: 75%;
-	float: right;
-}
 
 .map{
 	margin: 0 auto;
@@ -376,7 +376,6 @@ footer{
 }
 
 .calendario{
-	float: left;
 	border-color: white;
 	border: 1px solid black;
 	border-radius: 2px; 
@@ -398,7 +397,7 @@ footer{
 }
 
 .mese{
-	padding-top: 1px;
+	padding-top: 2px;
 }
 
 .form{
@@ -425,12 +424,14 @@ footer{
 }
 
 .input, .textarea{
-	width: 90%;
+	width: 95%;
 	margin: 10px auto;
 	padding: 5px 10px;
 	border: 0;
 	font-size: 16px;
 	background-color: #F0FFF0;
+	border: 1px solid lightgray;
+}
 }
 
 .input{
@@ -527,4 +528,24 @@ footer{
 	margin: auto;
 	right: 20px;
 	top: 20px;
+}
+
+.orario{
+	float: left;
+	margin-top: 3px;
+	margin-left: 3px;
+	color: #03C;
+}
+
+.lista{
+	list-style: inside;
+	font-size: 120%;
+}
+
+.lista li{
+	margin-top: 4px;
+}
+
+.data_eventi{
+	float: left;
 }
