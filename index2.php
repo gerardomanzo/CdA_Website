@@ -44,7 +44,7 @@
 							$mese = date('M',$timestamp);
 							$anno = date('Y',$timestamp);
 							$ora = date('H', $timestamp);
-							$minuti = date('i', $timestamp);;
+							$minuti = date('i', $timestamp);
 
 							echo "
 								<div class=\"riga_annunci\">
