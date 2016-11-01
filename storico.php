@@ -28,52 +28,45 @@
 		<section class="container">
 			<?php 
 				$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
-
 				if($mysqli->connect_errno)
 					die('Errore di connessione (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
 				
 				$query = $mysqli->prepare("SELECT * FROM storico WHERE id = ?");
-
 				$query->bind_param("i", $id);
 				$id = $_GET['id'];
-
-				$result = $query->execute();
-
-				if($result->num_rows)
-					while($row = $result->fetch_assoc())
-					{
-						echo '	
-						<h1 class="titolo">'.$row["titolo"].'</h1>
-						<div class="testo">
-							<p>
-								'.$row["descrizione"].'
-							</p>
-
-						</div>
-						<h1 class="titolo">Fotogallery</h1>';
-
-						$dirname = "./images/".$_GET['id']."/";
-						$images = glob($dirname."*.*");
-						$i = 0;
-						foreach($images as $image) {
-
-							echo '<a href="storico.php?photo='.$i.'"><div class="contenitore_foto"><img src="'.$image.'" /></div></a>';
-							$i++;
-						}
-						
-						if (isset($_GET["photo"])) {
-							
-							echo '
-								<div class="viewer_photo">
-									<a href="storico.php?photo='.($_GET["photo"]-1).'"><img class="prev" src="./images/prev.png"></a>
-									<img class="photo" src="'.$images[$_GET["photo"]].'">
-									<a href="storico.php?photo='.($_GET["photo"]+1).'"><img class="next" src="./images/next.png"></a>
-									<a href="storico.php"><img class="close" src="./images/close.png"></a>
-								</div>
-								';
-						}
+				$query->execute();
+				$query->bind_result($id, $titolo, $descrizione, $data);
+				
+				while($query->fetch())
+				{
+					echo '	
+					<h1 class="titolo">'.$titolo.'</h1>
+					<div class="testo">
+						<p>
+							'.$descrizione.'
+						</p>
+					</div>
+					<h1 class="titolo">Fotogallery</h1>';
+					$dirname = "./images/".$_GET['id']."/";
+					$images = glob($dirname."*.*");
+					$i = 0;
+					foreach($images as $image) {
+						echo '<a href="storico.php?id='.$_GET['id'].'&photo='.$i.'"><div class="contenitore_foto"><img src="'.$image.'" /></div></a>';
+						$i++;
 					}
-
+					
+					if (isset($_GET["photo"])) {
+						
+						echo '
+							<div class="viewer_photo">
+								<a href="storico.php?id='.$_GET['id'].'&photo='.(($_GET["photo"] == 0)?"".count($images)-1:"".($_GET["photo"]-1)).'"><img class="prev" src="./images/prev.png"></a>
+								<img class="photo" src="'.$images[$_GET["photo"]].'">
+								<a href="storico.php?id='.$_GET['id'].'&photo='.(($_GET["photo"] == count($images)-1)?"0":"".$_GET["photo"]+1).'"><img class="next" src="./images/next.png"></a>
+								<a href="storico.php?id='.$_GET['id'].'"><img class="close" src="./images/close.png"></a>
+							</div>
+							';
+					}
+				}
 			?>
 
 		</section>
