@@ -207,6 +207,11 @@ header{
 	float: left;
 }
 
+.right a{
+	float: left;
+	margin-top: -15px;
+}
+
 .right a img{
 	width: 45px;
 }
@@ -278,6 +283,7 @@ header{
 
 .riga_annunci:first-child{
 	border-top: 1px solid lightgray;
+	background-color: red;
 }
 
 .riga_eventi{
@@ -289,7 +295,7 @@ header{
 	border-bottom: 1px solid lightgray;
 }
 
-.riga_eventi:first-child{
+.riga_eventi:nth-child(0){
 	border-top: 1px solid lightgray;
 }
 
@@ -431,10 +437,9 @@ footer{
 	background-color: #F0FFF0;
 	border: 1px solid lightgray;
 }
-}
 
 .input{
-	height: 40px;
+	height: 30px;
 }
 
 .textarea{
@@ -444,8 +449,9 @@ footer{
 }
 
 .button{
-	background: linear-gradient(to bottom,#22abe9 5%,#36caf0 100%);
-	width: 95%;
+	margin-top: 10px;
+	background-color: #4169e1;
+	width: 100%;
 	height: 40px;
 	color: white;
 	font-weight: bolder;
@@ -454,20 +460,20 @@ footer{
 }
 
 .button:hover{
-	background:linear-gradient(to bottom,#36caf0 5%,#22abe9 100%)
+	background-color: #03c;
 }
 
 .areaprivata{
-	margin: 50px 50px;
-	width: 500px;
+	margin: 20px 0 0 50px;
+	width: 700px;
 	height: 500px;
 	float: left;
 }
 
 .lock{
-	opacity: 0.8;
+	opacity: 0.6;
 	float: left;
-	width: 370px;
+	width: 300px;
 	margin-top: 38px;
 }
 
@@ -547,4 +553,38 @@ footer{
 
 .data_eventi{
 	float: left;
+}
+
+.contenitore_foto{
+	float: left;
+	width: 75px;
+	height: 75px;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+	margin: 10px;
+}
+
+.contenitore_foto img{
+	max-width: 75px;
+	max-height: 75px;
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu_ap{
+	float: left;
+}
+
+.menu_ap li {
+	font-size: 120%;
+	margin: 10px 0;
+}
+
+.menu_ap a:hover{
+	color: #690;
 }
