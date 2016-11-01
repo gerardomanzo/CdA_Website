@@ -52,7 +52,7 @@
 						<form method="POST" action="areaprivata.php">
 							<input class="input" type="text" id="username" name="username" placeholder="username">
 							<input class="input" type="password" id="password" name="password" placeholder="password">
-							<input style="width= 98%" class="button" type="submit" value="Entra">
+							<input style="width: 98%;" class="button" type="submit" value="Entra">
 						</form>
 					</div>
 					
