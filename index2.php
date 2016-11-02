@@ -66,7 +66,7 @@
 										</p>
 									</div>";
 							if(isset($_SESSION['loggato']))
-								echo "<a href='cancellaAnnuncio.php?id=".$id."'>X</a>";
+								echo "<a class='bin' style='margin-top: -10px' href='cancellaAnnuncio.php?id=".$id."'><img src='./images/bin.png'></a>";
 							echo "</div>";
 
 						}
@@ -132,7 +132,7 @@
 										</div>
 									</div>";
 								if(isset($_SESSION['loggato']))
-									echo "<a href='cancellaEvento.php?id=".$id."'>X</a>";
+									echo "<a class='bin' style='margin-top: 20px' href='cancellaEvento.php?id=".$id."'><img src='./images/bin.png'></a>";
 								echo "</div>";
 						}
 
