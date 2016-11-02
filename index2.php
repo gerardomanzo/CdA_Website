@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 	<head>
 		<title>Consorzio dell'Agro ONLUS</title>
@@ -25,7 +28,7 @@
 		<section class="container">
 			<div class="annunci">
 				<h1 class="titolo"><img src="./images/news.png">Bacheca</h1>
-				<div>
+				
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
@@ -38,13 +41,14 @@
 					if($result->num_rows)
 						while($row = $result->fetch_assoc())
 						{
+							$id = $row['id'];
 							$timestamp = strtotime($row['data_ora']);
 
 							$giorno = date('d',$timestamp);
 							$mese = date('M',$timestamp);
 							$anno = date('Y',$timestamp);
 							$ora = date('H', $timestamp);
-							$minuti = date('i', $timestamp);
+							$minuti = date('i', $timestamp);;
 
 							echo "
 								<div class=\"riga_annunci\">
@@ -60,8 +64,11 @@
 										<p>".
 											$row['testo']."
 										</p>
-									</div>
-								</div>";
+									</div>";
+							if(isset($_SESSION['loggato']))
+								echo "<a href='cancellaAnnuncio.php?id=".$id."'>X</a>";
+							echo "</div>";
+
 						}
 
 					/* close result set */
@@ -70,11 +77,11 @@
 					/* close connection */
 					$mysqli->close();
 				?>
-				</div>
+
 			</div>
 			<div class="eventi">
 				<h1 class="titolo"><img src="./images/calendar.png"> Eventi</h1>
-				<div>
+				
 				<?php
 					$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
@@ -87,6 +94,7 @@
 					if($result->num_rows)
 						while($row = $result->fetch_assoc())
 						{
+							$id = $row['id'];
 							$timestamp = strtotime($row['data_ora']);
 
 							$giorno = date('d',$timestamp);
@@ -122,8 +130,10 @@
 												$row['luogo']."
 											</p>
 										</div>
-									</div>
-								</div>";
+									</div>";
+								if(isset($_SESSION['loggato']))
+									echo "<a href='cancellaEvento.php?id=".$id."'>X</a>";
+								echo "</div>";
 						}
 
 					/* close result set */
@@ -132,7 +142,7 @@
 					/* close connection */
 					$mysqli->close();
 				?>
-				</div>
+
 			</div>	
 		</section>
 	</div>	
