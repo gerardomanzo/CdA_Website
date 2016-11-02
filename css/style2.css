@@ -1,7 +1,5 @@
 /* 
-
 RESET CSS 
-
 */
 
 html, body, div, span, applet, object, iframe,
@@ -236,7 +234,8 @@ header{
 }
 
 .event{
-	width: 288px;
+	font-size: 130%;
+	width: 248px;
 	float: left;
 }
 
@@ -254,7 +253,7 @@ header{
 	margin-right: 10px;
 }
 
-.annunci img{
+.img_news{
 	float: left;
 	width: 30px;
 	margin-top: -2px;
@@ -287,7 +286,6 @@ header{
 }
 
 .riga_eventi{
-	font-size: 130%;
 	padding: 20px;
 	background-color: white;
 	float: left;
@@ -329,6 +327,7 @@ header{
 	float: left;
 	margin: 1px 0;
 	text-align: left;
+	width: 95%;
 }
 
 .descrizione_eventi{
@@ -381,12 +380,12 @@ footer{
 }
 
 .calendario{
-	border-color: white;
+	font-size: 130%;
+	text-align: center;
 	border: 1px solid black;
 	border-radius: 2px; 
 	width: 50px;
 	height: 47px;
-	background-color: white;
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
 	margin-right: 20px;
 }
@@ -443,7 +442,7 @@ footer{
 }
 
 .textarea{
-	height: 92px;
+	height: 110px;
 	resize: none;
 	text-align: left;
 }
@@ -536,6 +535,7 @@ footer{
 }
 
 .orario{
+	font-size: 130%;
 	float: left;
 	margin-top: 3px;
 	margin-left: 3px;
@@ -587,4 +587,53 @@ footer{
 
 .menu_ap a:hover{
 	color: #690;
+}
+
+.riga_storia{
+	width: 99%;
+	float: left;
+	padding: 10px 5px; 
+	border-bottom: 1px solid lightgray;
+}
+
+.riga_storia:first-child{
+	border-top: 1px solid lightgray;
+}
+
+.riga_storia:nth-child(odd){
+	background-color: #F0FFF0;
+}
+
+.storia{
+	width: 88%;
+	float: left;
+	font-size: 120%;
+}
+
+.storico{
+	margin: 0 auto;
+}
+
+.calendario2{
+	float: left;
+	text-align: center;
+}
+
+.link_storia{
+	color: #690;
+}
+
+.nome{
+	margin-top: 3px;
+}
+
+.bin{
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+
+}
+
+.bin img{
+	width: 25px;
 }
