@@ -28,74 +28,47 @@
 			<div class="storico">
 				<h1 class="titolo">Storico</h1>
 				<div>
-					<div class="riga_storia">
-						<div class="calendario" style="float: left">
-							<div class="giorno">
-								May
-							</div>
-							<div class="mese">
-								10
-							</div>
-						</div>
-						<div class="storia">
-							<div class="nome">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							</div>
-							<a href="#" class="link_storia">Guarda le foto</a>
-						</div>
-						<a class="bin" href="#"><img src="./images/bin.png"></a>
-					</div>
+					<?php 
+						$mysqli = new mysqli('localhost', 'root', '', 'consorzio_dell_agro');
 
-					<div class="riga_storia">
-						<div class="calendario" style="float: left">
-							<div class="giorno">
-								May
-							</div>
-							<div class="mese">
-								10
-							</div>
-						</div>
-						<div class="storia">
-							<div class="nome">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							</div>
-							<a href="#" class="link_storia">Guarda le foto</a>
-						</div>
-					</div>
+						if($mysqli->connect_errno)
+							die('Errore di connessione (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
+						
+						$query = "SELECT * FROM storico ORDER BY data";
+						$result = $mysqli->query($query);
 
-					<div class="riga_storia">
-						<div class="calendario" style="float: left">
-							<div class="giorno">
-								May
-							</div>
-							<div class="mese">
-								10
-							</div>
-						</div>
-						<div class="storia">
-							<div class="nome">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-							</div>
-							<a href="#" class="link_storia">Guarda le foto</a>
-						</div>
-					</div>
+						if($result->num_rows)
+							while($row = $result->fetch_assoc())
+							{
+								$id = $row['id'];
+								$data = strtotime($row['data']);
 
-					<div class="riga_storia">
-						<div class="calendario" style="float: left">
-							<div class="giorno">
-								May
-							</div>
-							<div class="mese">
-								10
-							</div>
-						</div>
-						<div class="storia">
-							<div class="nome">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							</div>
-							<a href="#" class="link_storia">Guarda le foto</a>
-						</div>
-					</div>
+								$giorno = date('d',$data);
+								$mese = date('M',$data);
+								$anno = date('Y',$data);
+
+								$titolo = $row['titolo'];
+
+								echo "<div class=\"riga_storia\">
+										<div class=\"calendario\" style=\"float: left\">
+											<div class=\"giorno\">".
+												$giorno ."
+											</div>
+											<div class=\"mese\">".
+												$mese ."
+											</div>
+										</div>
+										<div class=\"storia\">
+											<div class=\"nome\">".
+												$titolo ."
+											</div>
+											<a href=\"storico.php?id=" . $id ."\" class=\"link_storia\">Guarda le foto</a>
+										</div>
+										<a class=\"bin\" href=\"cancellaStorico.php?id=" . $id ."\"><img src=\"./images/bin.png\"></a>
+									</div>";
+
+							}
+					?>
 
 				</div>
 			</div>
